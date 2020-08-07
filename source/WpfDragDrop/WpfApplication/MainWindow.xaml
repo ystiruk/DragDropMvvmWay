@@ -23,7 +23,7 @@
               dd:DragDropHelpers.DragDropData="{Binding DragData, Mode=OneWayToSource}"/>
         <TextBlock Text="{Binding Path=DragData, 
           Converter={StaticResource dataObjectConverter},
-          StringFormat={}File Name: \'{0}\'}"/>
+          StringFormat={}Path: \'{0}\'}"/>
       </StackPanel>
     </Border>
   </Grid>
