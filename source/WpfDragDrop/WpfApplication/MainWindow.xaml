@@ -20,8 +20,8 @@
         <TextBlock Margin="0,0,0,10" Text="Drag file on colored plane" />
         <Grid x:Name="dragTarget" Background="Aquamarine" Height="150"
               dd:DragDropHelpers.EnableDragDrop="True" 
-              dd:DragDropHelpers.DragDropData="{Binding DragData, Mode=OneWayToSource}"/>
-        <TextBlock Text="{Binding Path=DragData, 
+              dd:DragDropHelpers.DragDropData="{Binding DropData, Mode=OneWayToSource}" />
+        <TextBlock Text="{Binding Path=DropData, 
           Converter={StaticResource dataObjectConverter},
           StringFormat={}Path: \'{0}\'}"/>
       </StackPanel>

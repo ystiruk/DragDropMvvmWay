@@ -4,11 +4,11 @@ namespace WpfApplication.Mvvm
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        private IDataObject _dragData;
-        public IDataObject DragData
+        private IDataObject _dropData;
+        public IDataObject DropData
         {
-            get { return _dragData; }
-            set { SetProperty(ref _dragData, value); }
+            get { return _dropData; }
+            set { SetProperty(ref _dropData, value); }
         }
     }
 }
